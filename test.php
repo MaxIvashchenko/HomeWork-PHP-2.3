@@ -6,7 +6,7 @@ if (!empty($_GET["name"])) {
 			$tests = file_get_contents($path);
 			$tests = json_decode($tests,true);
 		} else {
-			header("HTTP/1.0 404 Not Found");
+			header($_SERVER["SERVER_PROTOCOL"] . " 404 Not Found");
 			exit(1);
 		}
 }
