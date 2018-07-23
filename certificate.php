@@ -29,5 +29,3 @@ imagettftext($img, 30, 0, $x, $y, $black, $font, $text);
 
 imagepng($img);
 imagedestroy($imgg);
-
-?>
